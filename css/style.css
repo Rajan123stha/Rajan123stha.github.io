@@ -15,7 +15,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
+    --main-color: #59D5E0;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -23,7 +23,7 @@
 .dark-mode {
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
+    --shadow-color: rgba(184, 180, 180, 0.7);
 }
 
 html {
@@ -428,9 +428,10 @@ span {
 }
 
 .project-box img {
-    width: 250px;
+    width: 100%;
     height: 300px;
     transition: .5s ease;
+    
 }
 
 .project-box:hover img {
@@ -465,9 +466,23 @@ span {
 
 .project-layers p {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    margin: .3rem 0 0.5rem;
 }
 
+.skills {
+    font-weight: bold;
+    font-size: medium; /* Make "Skills Applied:" bold */
+  }
+  
+  .skill {
+    font-size: small;
+    display: inline-block; /* Display skills on the same line */
+    background-color: rgba(0, 0, 255, 0.2);; /* Set background color to blue */
+    color: white; /* Set text color to white */
+    padding: 2px 5px; /* Add padding for better spacing */
+    margin-right: 5px; /* Add margin between skills */
+  }
+  
 .project-layers a {
     display: inline-flex;
     justify-content: center;
