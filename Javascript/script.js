@@ -7,16 +7,27 @@ menuIcon.onclick = () => {
 };
 
 //For CV download
-const downloadCV = document.getElementById("download-cv");
-downloadCV.addEventListener("click", function () {
-  var CVPath = "../image/CV.png";
-  var downloadLink = document.createElement("a");
-  downloadLink.href = CVPath;
-  downloadLink.download = "CV.png";
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
-  console.log("clicked");
+// const downloadCV = document.getElementById("download-cv");
+// downloadCV.addEventListener("click", function () {
+//   var CVPath = "../image/CV.png";
+//   var downloadLink = document.createElement("a");
+//   downloadLink.href = CVPath;
+//   downloadLink.download = "CV.png";
+//   document.body.appendChild(downloadLink);
+//   downloadLink.click();
+//   document.body.removeChild(downloadLink);
+//   console.log("clicked");
+// });
+
+document.getElementById("download-cv").addEventListener("click", function () {
+  var cvPath = "image/rajancv.pdf"; // Path to your CV file
+  var link = document.createElement("a");
+  link.setAttribute("href", cvPath);
+  link.setAttribute("download", "Rajan_Shrestha_CV.pdf"); // Name for the downloaded file
+  link.style.display = "none";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 });
 
 /*scroll section active link*/
