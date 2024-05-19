@@ -15,7 +15,8 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #59D5E0;
+    --main-color: #39bdc9;
+    --main-color-hover: #2d8b94;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -32,6 +33,7 @@ html {
 }
 
 body {
+    width: 100%;
     height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
@@ -183,12 +185,13 @@ section {
     font-weight: 600;
     border: .2 solid transparent;
     transition: .5s ease;
+    
 }
 
 .btn:hover {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--main-color);
+    background: var(--main-color-hover);
+    color: var(--white-color);
+    border-color: var(--white-color);
 }
 
 .home .profession-container {
@@ -317,8 +320,13 @@ span {
     gap: 4rem;
 }
 
-.about-img {
-    width: 40vw;
+
+.about-img img {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border-radius: 50%;
+    border: 5px solid #3498db; /* Adjust the border color as needed */
+    object-fit: cover; /* Ensures the image covers the area */
 }
 
 .heading {
@@ -342,6 +350,14 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+.more-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 .services {
     min-height: auto;
@@ -396,12 +412,23 @@ span {
     color: var(--main-color);
 
 }
-
-.services-box p {
+.services-box p{
+    margin-bottom: 1.5rem;
+}
+.services-box .s-details {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 
 }
+.skills-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.show-skills {
+    display: block;
+}
+
 
 .project {
     padding-bottom: 10rem;
@@ -477,10 +504,11 @@ span {
   .skill {
     font-size: small;
     display: inline-block; /* Display skills on the same line */
-    background-color: rgba(0, 0, 255, 0.2);; /* Set background color to blue */
+    background-color: var(--main-color); /* Set background color to blue */
     color: white; /* Set text color to white */
     padding: 2px 5px; /* Add padding for better spacing */
-    margin-right: 5px; /* Add margin between skills */
+    margin-right: 5px; 
+   /* Add margin between skills */
   }
   
 .project-layers a {
@@ -538,7 +566,63 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
+.thank-you-message {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--main-color);
+}
 
+.footer {
+    background-color:var(--main-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color:var(--text-color);
+}
+
+.footer-social {
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color:var(--text-color);
+}
+
+.footer-text {
+    font-size: 0.9em;
+    color:var(--white-color);
+}
+/*
 .footer {
     margin: 0;
     display: flex;
@@ -569,7 +653,7 @@ span {
 .footer .footer-text p a:hover {
     transform: scale(1.1);
     opacity: 10;
-}
+}*/
 
 /* BREAKPOINTS*/
 @media (max-width:1200px) {
@@ -839,7 +923,7 @@ span {
     }
 }
 
-@media(max-width:365px) {
+@media(max-width:375px) {
     .about-img img {
         width: 90vw;
     }

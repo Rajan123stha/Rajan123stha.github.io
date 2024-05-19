@@ -79,3 +79,49 @@ ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {
   origin: "right",
 });
+
+// About section readmore button handler
+document
+  .getElementById("toggle-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const moreContent = document.querySelector(".more-content");
+    const btn = event.target;
+
+    if (moreContent.classList.contains("show")) {
+      moreContent.classList.remove("show");
+      btn.textContent = "Read More";
+    } else {
+      moreContent.classList.add("show");
+      btn.textContent = "Read Less";
+    }
+  });
+
+// Service section
+document.querySelectorAll(".toggle-btn").forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    const skillsContent = this.previousElementSibling;
+
+    if (skillsContent.classList.contains("show-skills")) {
+      skillsContent.classList.remove("show-skills");
+      this.textContent = "Show Skills";
+    } else {
+      skillsContent.classList.add("show-skills");
+      this.textContent = "Hide Skills";
+    }
+  });
+});
+
+// Contact me
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Display the thank you message
+    document.getElementById("thankYouMessage").style.display = "block";
+
+    // Optionally, you can hide the form after submission
+    document.getElementById("contactForm").style.display = "none";
+  });
