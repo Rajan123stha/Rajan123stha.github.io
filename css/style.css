@@ -11,7 +11,7 @@
   font-family: lato;
 }
 
-:root {
+/* :root {
   --bg-color: #fdfdfd;
   --text-color: #333;
   --main-color: #39bdc9;
@@ -24,6 +24,23 @@
   --bg-color: #0b061f;
   --text-color: #fdfdfd;
   --shadow-color: rgba(184, 180, 180, 0.7);
+} */
+:root {
+  --bg-color: #fafafa; /* Very light grey for a clean, minimal background */
+  --text-color: #1a1a1a; /* Almost black, for strong contrast and readability */
+  --main-color: #00b894; /* Fresh mint green as the accent color */
+  --main-color-hover: #00916e; /* Darker green for hover effects */
+  --white-color: #ffffff; /* Pure white */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light shadow for soft depth */
+}
+
+.dark-mode {
+  --bg-color: #121212; /* Near black background for a sleek dark mode */
+  --text-color: #eaeaea; /* Light grey for text */
+  --main-color: #00b894; /* Consistent mint green accent */
+  --main-color-hover: #00916e; /* Darker mint green for hover */
+  --white-color: #f0f0f0; /* Light off-white for contrast */
+  --shadow-color: rgba(255, 255, 255, 0.1); /* Soft white shadow in dark mode */
 }
 
 html {
@@ -128,9 +145,18 @@ section {
   display: flex;
   align-items: center;
 }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* To ensure it stays behind the content */
+}
 
 .home .home-content {
   max-width: 44rem;
+  z-index: 2;
 }
 
 .home-content h1 {
