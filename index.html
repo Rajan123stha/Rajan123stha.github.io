@@ -20,30 +20,36 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">services</a>
+        <a href="#experiences">Experiences</a>
         <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="bx bx-moon" id="darkMode"></div>
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
-     <!-- Animated Hero section -->
-     
+    <!-- Animated Hero section -->
+
     <!--Home section design-->
 
     <section class="home" id="home">
       <div id="particles-js"></div>
       <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Rajan Shrestha</h1>
+        <h3>Hello <span class="wave">👋</span>, I am</h3>
+        <h1 id="typewriter">    </h1>
         <p>
           "Design is not just what it looks like and feels like. Design is how
           it works."<span class="author"> - Steve Jobs</span>
         </p>
         <div class="social-media">
-          <a href="https://www.facebook.com/rjan.tha/"><i class="bx bxl-facebook"></i></a>
-          <a href="https://github.com/Rajan123stha"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/"><i class="bx bxl-linkedin"></i></a>
+          <!-- <a href="https://www.facebook.com/rjan.tha/"
+            ><i class="bx bxl-facebook"></i
+          ></a> -->
+          <a href="https://github.com/Rajan123stha"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
         <button class="btn" id="download-cv">Download CV</button>
       </div>
@@ -54,116 +60,157 @@
             <h3>Front-end Dev</h3>
           </div>
           <div class="profession" style="--i: 1">
-            <i class="bx bx-palette"></i>
+            <i class="bx bxs-server"></i>
             <h3>Backend Dev</h3>
           </div>
           <div class="profession" style="--i: 2">
-            <i class="bx bx-game"></i>
+            <i class="bx bxs-layer"></i>
             <h3>Full Stack Dev</h3>
           </div>
           <div class="profession" style="--i: 3">
-            <i class="bx bxs-camera"></i>
+            <i class="bx bxs-palette"></i>
             <h3>Web Designer</h3>
           </div>
           <div class="circle"></div>
         </div>
         <div class="overlay"></div>
       </div>
-      <div class="home-img">
-        <img src="image/MyProfile.png" alt="" />
-      </div>
     </section>
 
     <!--about setion design-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="image/MyProfile.png" alt="Profile Image" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Hi, I am Here to help with your next project!</h3>
-        <p>
-          I'm Rajan Shrestha, a passionate Front-End Developer. Specializing in
-          HTML, CSS, JavaScript, and React, I excel at transforming design
-          concepts into user-friendly websites. With additional knowledge in
-          backend frameworks like Express.js and proficiency in design tools
-          like Figma.
-        </p>
-        <div class="more-content">
-          <p>
-            In addition to my technical skills, I have experience working with
-            agile methodologies and collaborating with cross-functional teams to
-            deliver high-quality products. My goal is to continuously improve
-            and stay updated with the latest industry trends to provide the best
-            solutions for clients.
-          </p>
+    <section class="about-container" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about">
+        <div class="about-img">
+          <img src="image/MyProfile.png" alt="Profile Image" />
         </div>
-        <a href="#" class="btn" id="toggle-btn">Read More</a>
+        <div class="about-content">
+          <h3>Frontend & Fullstack Developer</h3>
+          <p class="about-details">
+            Frontend developer with expertise in HTML, CSS, and JavaScript,
+            proficient in React, and a solid foundation in Express and MongoDB.
+            Experienced in building websites with WordPress and Wagtail as
+            backends and deploying them on AWS. Passionate about creating
+            seamless web experiences, staying updated with industry trends, and
+            excelling in collaborative environments.
+          </p>
+
+          <!-- Skills Section -->
+          <h4>My Skills:</h4>
+          <div class="skills-container">
+            <div class="skills-list">
+              <p class="skill">HTML & CSS</p>
+
+              <p class="skill">JavaScript</p>
+              <p class="skill">React.js</p>
+              <p class="skill">Python</p>
+              <p class="skill">Payload CMS</p>
+              <p class="skill">MongoDB</p>
+
+              <!-- Hidden skills initially -->
+              <div class="hidden-skills">
+                <p class="skill">Web Hosting(AWS)</p>
+                <p class="skill">Node.js</p>
+                <p class="skill">Redux</p>
+                <p class="skill">TypeScript</p>
+                <p class="skill">Tailwind CSS</p>
+                <p class="skill">Figma</p>
+                <p class="skill">Git & GitHub</p>
+                <p class="skill">Wordpress</p>
+                <p class="skill">Wagtail</p>
+                <p class="skill">Jest / React Testing Library</p>
+              </div>
+            </div>
+          </div>
+
+          <button id="toggle-skills-btn" class="btn">Show More</button>
+        </div>
       </div>
     </section>
 
     <!--services section design-->
-    <section class="services" id="services">
-      <h2 class="heading">My <span>services</span></h2>
+    <section class="services" id="experiences">
+      <h2 class="heading">My <span>Experiences</span></h2>
       <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Frontend Developer</h3>
-          <p class="s-details">
-            As a committed Front-End Developer, I specialize in the meticulous
-            crafting of visually captivating and intuitive websites utilizing
-            HTML, CSS, JavaScript, and React. Leveraging my acute design
-            sensibilities and adeptness at transforming abstract concepts into
-            tangible digital experiences.
-          </p>
-          <div class="skills-content">
-            <p class="skill">HTML</p>
-            <p class="skill">CSS</p>
-            <p class="skill">JavaScript</p>
-            <p class="skill">React</p>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Web Development Intern</h3>
 
-            <p class="skill">UI/UX</p>
+            <span class="experience-duration">2024 — PRESENT</span>
           </div>
-          <a href="#" class="btn toggle-btn">Show Skills</a>
+          <a href="#" class="experience-place">
+            HiddenLayer Network Pvt. Ltd.
+            <span class="external-link-icon">– Kathmandu</span>
+          </a>
+          <div class="experience-description">
+            <ul class="experience-list">
+              <li>
+                Developed a fully functional and reusable portfolio website
+                using WordPress as the backend.
+              </li>
+              <li>
+                Researched, designed, and built a website for ApplyLeap using
+                Wagtail CMS as the backend.
+              </li>
+              <li>
+                Hosted the ApplyLeap website on AWS, with the frontend on S3 and
+                the backend on EC2 using a custom subdomain.
+              </li>
+              <li>
+                Implemented SSL certificates and CloudFront to secure the
+                website with HTTPS.
+              </li>
+              <li>
+                Optimized hosting costs while ensuring performance and
+                scalability.
+              </li>
+              <li>
+                Tracked, identified, and reported website bugs to the Website
+                Developer for timely resolution.
+              </li>
+              <li>
+                Assisted the Marketing Manager in executing SEO strategies to
+                enhance website visibility.
+              </li>
+              <li>
+                Helped optimize website performance through technical
+                improvements and SEO best practices.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-skills">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Tailwind</span>
+            <span class="skill-badge">Wordpress</span>
+            <span class="skill-badge">Wagtail</span>
+            <span class="skill-badge">Payload</span>
+            <span class="skill-badge">AWS</span>
+          </div>
         </div>
 
-        <div class="services-box">
-          <i class="bx bx-code-curly"></i>
-          <h3>Backend Developer</h3>
-          <p class="s-details">
-            As an experienced Backend Developer, I specialize in utilizing
-            Node.js with Express.js to develop robust and scalable backend
-            solutions. With a strong command of MongoDB and proficient API
-            handling skills, I focus on crafting efficient and secure
-            server-side architectures.
-          </p>
-          <div class="skills-content">
-            <p class="skill">Node.js</p>
-            <p class="skill">Express.js</p>
-            <p class="skill">MongoDB</p>
-            <p class="skill">RESTful APIs</p>
-            <p class="skill">Database</p>
-          </div>
-          <a href="#" class="btn toggle-btn">Show Skills</a>
-        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Assistant Website Manager</h3>
 
-        <div class="services-box">
-          <i class="bx bx-palette"></i>
-          <h3>Web Designer</h3>
-          <p class="s-details">
-            As a seasoned Web Designer, I offer comprehensive expertise in Figma
-            for design and prototype creation, coupled with advanced UI and UX
-            training. With a keen eye for detail and a focus on user-centric
-            design principles, I specialize in crafting visually compelling and
-            intuitive digital experiences.
-          </p>
-          <div class="skills-content">
-            <p class="skill">Figma</p>
-            <p class="skill">UI/UX Design</p>
-
-            <p class="skill">Prototyping</p>
+            <span class="experience-duration">April, 2023 — November, 2023</span>
           </div>
-          <a href="#" class="btn toggle-btn">Show Skills</a>
+          <a href="#" class="experience-place">
+            Thames International College
+            <span class="external-link-icon">–Old Baneswor, Kathmandu</span>
+          </a>
+          <div class="experience-description">
+            <ul class="experience-list">
+              <li>Tracked, identified, and reported website bugs to the Website Developer for timely resolution.</li>
+              <li>Assisted the Marketing Manager in executing Search Engine Optimization (SEO) strategies to enhance website visibility.</li>
+              <li>Helped optimize website performance through technical improvements and SEO best practices.</li>
+            </ul>
+            </ul>
+          </div>
+          <div class="experience-skills">
+            <span class="skill-badge">SEO</span>
+            <span class="skill-badge">Website Optimization</span>
+            
+          </div>
         </div>
       </div>
     </section>
@@ -173,136 +220,180 @@
       <h2 class="heading">Latest<span> Projects</span></h2>
       <div class="project-container">
         <div class="project-box">
-          <img src="image/project.jpg" alt="" />
-          <div class="project-layers">
-            <h4>Portfolio Website</h4>
-            <p>
-              Welcome to my portfolio website, a showcase of my proficiency in
-              frontend development and web design. With meticulous attention to
-              detail, I present my professional journey, services, and an array
-              of captivating projects.
-            </p>
+          <div class="image-container">
+            <img src="image/project.jpg" alt="Project Image" />
+            <div class="project-layers">
+              <h4>Youtube comment sentiment Analyzer</h4>
+              <div class="details">
+                A NLP-powered tool that analyzes emotional tone in YouTube
+                comments. Classifies sentiments using machine learning for
+                insightful feedback.
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>Youtube comment sentiment Analyzer</h4>
             <div class="skills">
-              Skills Applied:
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
+              <p class="skill">React</p>
+              <p class="skill">Python</p>
+              <p class="skill">Naive Bayes</p>
               <p class="skill">Javascript</p>
             </div>
-            <a href="https://rajan123stha.github.io/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            <div class="project-links">
+              <a
+                href="https://your-live-project.com"
+                target="_blank"
+                class="live-link"
+                title="Live Project"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+              <a
+                href="https://github.com/your-repo"
+                target="_blank"
+                class="github-link"
+                title="GitHub Repo"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="project-box">
-          <img src="image/project.jpg" alt="" />
-          <div class="project-layers">
+          <div class="image-container">
+            <img src="image/project.jpg" alt="Project Image" />
+            <div class="project-layers">
+              <h4>Ecommerce System</h4>
+              <div class="details">
+                This project is a simple eCommerce website developed as a part
+                of my academic work. The website focuses on the frontend and
+                showcases various products with their details.
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
             <h4>Ecommerce System</h4>
-            <p>
-              This project is a simple eCommerce website developed as a part 
-              of my academic work. The website focuses on the frontend and showcases
-               various products with their details.
-            </p>
             <div class="skills">
-              Skills Applied:
               <p class="skill">HTML</p>
               <p class="skill">CSS</p>
               <p class="skill">Javascript</p>
               <p class="skill">React</p>
             </div>
-            <a href="https://rajan123stha.github.io/Ecommerce-system/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+            <div class="project-links">
+              <a
+                href="https://rajan123stha.github.io/Ecommerce-system/"
+                target="_blank"
+                class="live-link"
+                title="Live Project"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
+
         <div class="project-box">
-          <img src="image/education.jpeg" alt="" />
-          <div class="project-layers">
+          <div class="image-container">
+            <img src="image/education.jpeg" alt="Project Image" />
+            <div class="project-layers">
+              <h4>Edusanjal Clone</h4>
+              <div class="details">
+                I've crafted a replica of Edusanjal, leveraging my expertise in
+                programming and design. This platform provides comprehensive
+                educational resources and services, catering to students' needs
+                with intuitive navigation and rich content.
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
             <h4>Edusanjal Clone</h4>
-            <p>
-              I've crafted a replica of Edusanjal, leveraging my expertise in
-              programming and design. This platform provides comprehensive
-              educational resources and services, catering to students' needs
-              with intuitive navigation and rich content.
-            </p>
             <div class="skills">
-              Skills Applied:
               <p class="skill">HTML</p>
               <p class="skill">CSS</p>
               <p class="skill">Javascript</p>
               <p class="skill">React</p>
               <p class="skill">Figma</p>
             </div>
-
-            <a href="https://rajan123stha.github.io/Edusanjal"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-box">
-          <img src="image/project.jpg" alt="" />
-          <div class="project-layers">
-            <h4>Facebook</h4>
-            <p>
-              I've recreated the user interface design of Facebook, focusing
-              solely on the frontend aspect. This replication captures the
-              aesthetic and usability of Facebook's interface, providing a
-              familiar browsing experience for users
-            </p>
-            <div class="skills">
-              Skills Applied:
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">Javascript</p>
+            <div class="project-links">
+              <a
+                href="https://rajan123stha.github.io/Edusanjal"
+                target="_blank"
+                class="live-link"
+                title="Live Project"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
             </div>
-
-            <a href="https://rajan123stha.github.io/Lookbook/"
-              ><i class="bx bx-link-external"></i
-            ></a>
           </div>
         </div>
 
-       
-
         <div class="project-box">
-          <img src="image/project.jpg" alt="" />
-          <div class="project-layers">
+          <div class="image-container">
+            <img src="image/project.jpg" alt="Project Image" />
+            <div class="project-layers">
+              <h4>Hostel Management System</h4>
+              <div class="details">
+                I developed the Hostel Management System as part of my academic
+                project to assist hostel administrators in managing students and
+                rooms within the hostel.
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
             <h4>Hostel Management System</h4>
-            <p>
-              I developed the Hostel Management System as part of my academic project to 
-              assist hostel administrators in managing students and rooms within the hostel.
-            </p>
             <div class="skills">
-              Skills Applied:
               <p class="skill">HTML</p>
               <p class="skill">CSS</p>
               <p class="skill">Javascript</p>
               <p class="skill">PHP</p>
               <p class="skill">SQL</p>
             </div>
-          
+            <div class="project-links">
+              <a
+                href="https://rajan123stha.github.io/Lookbook/"
+                target="_blank"
+                class="live-link"
+                title="Live Project"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-box">
-          <img src="image/project.jpg" alt="" />
-          <div class="project-layers">
-            <h4>CreativeCrafted</h4>
-            <p>
-              I have developed fully functional ecommerce system using 
-              MERN stack as a part of my academic project. Mainly to sell 
-              art and craft product. I have also integrated payment sytem.
 
-            </p>
+        <div class="project-box">
+          <div class="image-container">
+            <img src="image/project.jpg" alt="Project Image" />
+            <div class="project-layers">
+              <h4>CreativeCrafted</h4>
+              <div class="details">
+                I have developed fully functional ecommerce system using MERN
+                stack as a part of my academic project. Mainly to sell art and
+                craft product. I have also integrated payment sytem.
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h4>CreativeCrafted</h4>
             <div class="skills">
-              Skills Applied:
               <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
+
               <p class="skill">Javascript</p>
               <p class="skill">React</p>
               <p class="skill">Express</p>
               <p class="skill">MongoDB</p>
             </div>
-          
+            <div class="project-links">
+              <a
+                href="https://rajan123stha.github.io/Lookbook/"
+                target="_blank"
+                class="live-link"
+                title="Live Project"
+              >
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -310,43 +401,79 @@
 
     <!--contact section design-->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form id="contactForm" action="#" method="post">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" name="name" id="name" required />
-                <input type="email" placeholder="Email" name="email" id="email" required />
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="number" id="number" required />
-                <input type="text" placeholder="Subject" name="subject" id="subject" required />
-            </div>
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn" />
-        </form>
-        <div id="thankYouMessage" class="thank-you-message" style="display: none;">
-            <p>Thank you for contacting me! I will get back to you soon.</p>
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Full Name"
+            name="name"
+            id="name"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+          />
         </div>
+        <div class="input-box">
+          <input
+            type="number"
+            placeholder="Mobile Number"
+            name="number"
+            id="number"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            id="subject"
+            required
+          />
+        </div>
+        <textarea
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+      <div id="thankYouMessage" class="thank-you-message" style="display: none">
+        <p>Thank you for contacting me! I will get back to you soon.</p>
+      </div>
     </section>
 
     <!--Footer section design-->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Help</a>
-                <a href="Html/index.html">Feedback</a>
-                <a href="#">Location</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/" class="social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Rajan123stha" class="social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-            <div class="footer-text">
-                <p>&copy; 2024 Rajan Shrestha. All rights reserved.</p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="Html/index.html">Feedback</a>
+          <a href="#">Location</a>
+          <a href="#experiences">Experiences</a>
         </div>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/"
+            class="social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Rajan123stha" class="social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div class="footer-text">
+          <p>&copy; 2024 Rajan Shrestha. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-    
 
     <!--Scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -354,6 +481,5 @@
 
     <script src="Javascript/script.js"></script>
     <script src="Javascript/animation..js"></script>
-
   </body>
 </html>

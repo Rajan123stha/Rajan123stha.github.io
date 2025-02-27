@@ -19,8 +19,28 @@ menuIcon.onclick = () => {
 //   console.log("clicked");
 // });
 
+const text = "Rajan Shrestha";
+const speed = 100; // Typing speed in ms
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(() => {
+      document.getElementById("typewriter").innerHTML = ""; // Clear the typed text
+      index = 0; // Reset index for next loop
+      typeWriter(); // Restart typing
+    }, 2000); // Optional delay before restarting
+  }
+}
+
+window.onload = typeWriter;
+
 document.getElementById("download-cv").addEventListener("click", function () {
-  var cvPath = "image/rajancv.pdf"; // Path to your CV file
+  var cvPath = "image/Rajan_CV.pdf"; // Path to your CV file
   var link = document.createElement("a");
   link.setAttribute("href", cvPath);
   link.setAttribute("download", "Rajan_Shrestha_CV.pdf"); // Name for the downloaded file
@@ -82,18 +102,15 @@ ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {
 
 // About section readmore button handler
 document
-  .getElementById("toggle-btn")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    const moreContent = document.querySelector(".more-content");
-    const btn = event.target;
-
-    if (moreContent.classList.contains("show")) {
-      moreContent.classList.remove("show");
-      btn.textContent = "Read More";
+  .getElementById("toggle-skills-btn")
+  .addEventListener("click", function () {
+    const hiddenSkills = document.querySelector(".hidden-skills");
+    if (hiddenSkills.style.display === "flex") {
+      hiddenSkills.style.display = "none";
+      this.textContent = "Show More";
     } else {
-      moreContent.classList.add("show");
-      btn.textContent = "Read Less";
+      hiddenSkills.style.display = "flex";
+      this.textContent = "Show Less";
     }
   });
 
