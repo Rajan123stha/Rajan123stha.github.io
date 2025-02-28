@@ -31,424 +31,493 @@
 
     <!--Home section design-->
 
-    <section class="home" id="home">
-      <div id="particles-js"></div>
-      <div class="home-content">
-        <h3>Hello <span class="wave">👋</span>, I am</h3>
-        <h1 id="typewriter">    </h1>
-        <p>
-          "Design is not just what it looks like and feels like. Design is how
-          it works."<span class="author"> - Steve Jobs</span>
-        </p>
-        <div class="social-media">
-          <!-- <a href="https://www.facebook.com/rjan.tha/"
+    <main>
+      <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="home-content">
+          <h3>Hello <span class="wave">👋</span>, I am</h3>
+          <h1 id="typewriter"></h1>
+          <p>
+            "Design is not just what it looks like and feels like. Design is how
+            it works."<span class="author"> - Steve Jobs</span>
+          </p>
+          <div class="social-media">
+            <!-- <a href="https://www.facebook.com/rjan.tha/"
             ><i class="bx bxl-facebook"></i
           ></a> -->
-          <a href="https://github.com/Rajan123stha"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+            <a href="https://github.com/Rajan123stha"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/rajan-shrestha-1624a1224/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+          <button class="btn" id="download-cv">Download CV</button>
         </div>
-        <button class="btn" id="download-cv">Download CV</button>
-      </div>
-      <div class="profession-container">
-        <div class="profession-box">
-          <div class="profession" style="--i: 0">
-            <i class="bx bx-code-alt"></i>
-            <h3>Front-end Dev</h3>
+        <div class="profession-container">
+          <div class="profession-box">
+            <div class="profession" style="--i: 0">
+              <i class="bx bx-code-alt"></i>
+              <h3>Front-end Dev</h3>
+            </div>
+            <div class="profession" style="--i: 1">
+              <i class="bx bxs-server"></i>
+              <h3>Backend Dev</h3>
+            </div>
+            <div class="profession" style="--i: 2">
+              <i class="bx bxs-layer"></i>
+              <h3>Full Stack Dev</h3>
+            </div>
+            <div class="profession" style="--i: 3">
+              <i class="bx bxs-palette"></i>
+              <h3>Web Designer</h3>
+            </div>
+            <div class="circle"></div>
           </div>
-          <div class="profession" style="--i: 1">
-            <i class="bx bxs-server"></i>
-            <h3>Backend Dev</h3>
-          </div>
-          <div class="profession" style="--i: 2">
-            <i class="bx bxs-layer"></i>
-            <h3>Full Stack Dev</h3>
-          </div>
-          <div class="profession" style="--i: 3">
-            <i class="bx bxs-palette"></i>
-            <h3>Web Designer</h3>
-          </div>
-          <div class="circle"></div>
+          <div class="overlay"></div>
         </div>
-        <div class="overlay"></div>
-      </div>
-    </section>
+      </section>
 
-    <!--about setion design-->
-    <section class="about-container" id="about">
-      <h2 class="heading">About <span>Me</span></h2>
-      <div class="about">
-        <div class="about-img">
-          <img src="image/MyProfile.png" alt="Profile Image" />
+      <!--about setion design-->
+      <section class="about-container" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about">
+          <div class="about-img">
+            <img src="image/MyProfile.png" alt="Profile Image" />
+          </div>
+          <div class="about-content">
+            <h3>Frontend & Fullstack Developer</h3>
+            <p class="about-details">
+              Frontend developer with expertise in HTML, CSS, and JavaScript,
+              proficient in React, and a solid foundation in Express and
+              MongoDB. Experienced in building websites with WordPress and
+              Wagtail as backends and deploying them on AWS. Passionate about
+              creating seamless web experiences, staying updated with industry
+              trends, and excelling in collaborative environments.
+            </p>
+
+            <!-- Skills Section -->
+            <h4>My Skills:</h4>
+            <div class="skills-container">
+              <div class="skills-list">
+                <p class="skill">HTML & CSS</p>
+
+                <p class="skill">JavaScript</p>
+                <p class="skill">React.js</p>
+                <p class="skill">Python</p>
+                <p class="skill">Payload CMS</p>
+                <p class="skill">MongoDB</p>
+
+                <!-- Hidden skills initially -->
+                <div class="hidden-skills">
+                  <p class="skill">Web Hosting(AWS)</p>
+                  <p class="skill">Node.js</p>
+                  <p class="skill">Redux</p>
+                  <p class="skill">TypeScript</p>
+                  <p class="skill">Tailwind CSS</p>
+                  <p class="skill">Figma</p>
+                  <p class="skill">Git & GitHub</p>
+                  <p class="skill">Wordpress</p>
+                  <p class="skill">Wagtail</p>
+                  <p class="skill">Jest / React Testing Library</p>
+                </div>
+              </div>
+            </div>
+
+            <button id="toggle-skills-btn" class="btn">Show More</button>
+          </div>
         </div>
-        <div class="about-content">
-          <h3>Frontend & Fullstack Developer</h3>
-          <p class="about-details">
-            Frontend developer with expertise in HTML, CSS, and JavaScript,
-            proficient in React, and a solid foundation in Express and MongoDB.
-            Experienced in building websites with WordPress and Wagtail as
-            backends and deploying them on AWS. Passionate about creating
-            seamless web experiences, staying updated with industry trends, and
-            excelling in collaborative environments.
-          </p>
+      </section>
 
-          <!-- Skills Section -->
-          <h4>My Skills:</h4>
-          <div class="skills-container">
-            <div class="skills-list">
-              <p class="skill">HTML & CSS</p>
+      <!--services section design-->
+      <section class="services" id="experiences">
+        <h2 class="heading">My <span>Experiences</span></h2>
+        <div class="services-container">
+          <div class="experience-card">
+            <div class="experience-header">
+              <h3 class="experience-title">Web Development Intern</h3>
 
-              <p class="skill">JavaScript</p>
-              <p class="skill">React.js</p>
-              <p class="skill">Python</p>
-              <p class="skill">Payload CMS</p>
-              <p class="skill">MongoDB</p>
+              <span class="experience-duration">2024 — PRESENT</span>
+            </div>
+            <a href="#" class="experience-place">
+              HiddenLayer Network Pvt. Ltd.
+              <span class="external-link-icon">– Kathmandu</span>
+            </a>
+            <div class="experience-description">
+              <ul class="experience-list">
+                <li>
+                  Developed a fully functional and reusable portfolio website
+                  using WordPress as the backend.
+                </li>
+                <li>
+                  Researched, designed, and built a website for ApplyLeap using
+                  Wagtail CMS as the backend.
+                </li>
+                <li>
+                  Hosted the ApplyLeap website on AWS, with the frontend on S3
+                  and the backend on EC2 using a custom subdomain.
+                </li>
+                <li>
+                  Implemented SSL certificates and CloudFront to secure the
+                  website with HTTPS.
+                </li>
+                <li>
+                  Optimized hosting costs while ensuring performance and
+                  scalability.
+                </li>
+                <li>
+                  Tracked, identified, and reported website bugs to the Website
+                  Developer for timely resolution.
+                </li>
+                <li>
+                  Assisted the Marketing Manager in executing SEO strategies to
+                  enhance website visibility.
+                </li>
+                <li>
+                  Helped optimize website performance through technical
+                  improvements and SEO best practices.
+                </li>
+              </ul>
+            </div>
+            <div class="experience-skills">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Tailwind</span>
+              <span class="skill-badge">Wordpress</span>
+              <span class="skill-badge">Wagtail</span>
+              <span class="skill-badge">Payload</span>
+              <span class="skill-badge">AWS</span>
+            </div>
+          </div>
 
-              <!-- Hidden skills initially -->
-              <div class="hidden-skills">
-                <p class="skill">Web Hosting(AWS)</p>
-                <p class="skill">Node.js</p>
-                <p class="skill">Redux</p>
-                <p class="skill">TypeScript</p>
-                <p class="skill">Tailwind CSS</p>
-                <p class="skill">Figma</p>
-                <p class="skill">Git & GitHub</p>
-                <p class="skill">Wordpress</p>
+          <div class="experience-card">
+            <div class="experience-header">
+              <h3 class="experience-title">Assistant Website Manager</h3>
+
+              <span class="experience-duration"
+                >April, 2023 — November, 2023</span
+              >
+            </div>
+            <a href="#" class="experience-place">
+              Thames International College
+              <span class="external-link-icon">–Old Baneswor, Kathmandu</span>
+            </a>
+            <div class="experience-description">
+              <ul class="experience-list">
+                <li>
+                  Tracked, identified, and reported website bugs to the Website
+                  Developer for timely resolution.
+                </li>
+                <li>
+                  Assisted the Marketing Manager in executing Search Engine
+                  Optimization (SEO) strategies to enhance website visibility.
+                </li>
+                <li>
+                  Helped optimize website performance through technical
+                  improvements and SEO best practices.
+                </li>
+              </ul>
+            </div>
+            <div class="experience-skills">
+              <span class="skill-badge">SEO</span>
+              <span class="skill-badge">Website Optimization</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Project section design-->
+      <section class="project" id="project">
+        <h2 class="heading">Latest<span> Projects</span></h2>
+        <div class="project-container">
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/applyleap.png" alt="Project Image" />
+              <div class="project-layers">
+                <h4>Applyleap</h4>
+                <div class="details">
+                  Researched, designed, and developed a website for ApplyLeap
+                  using React in frontend and payload CMS as the backend.
+                  Implemented a custom subdomain for the backend and hosted the
+                  website on AWS. A platform for students to get all the
+                  necessary informmation aobut abroad study.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Applyleap</h4>
+              <div class="skills">
+                <p class="skill">React</p>
+                <p class="skill">Payload</p>
                 <p class="skill">Wagtail</p>
-                <p class="skill">Jest / React Testing Library</p>
+                <p class="skill">AWS</p>
+                <p class="skill">Tailwind</p>
+                <p class="skill">Figma</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://applyleap.com"
+                  target="_blank"
+                  class="live-link"
+                  title="Live Project"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https:// github.com/Rajan123stha/applyleap"
+                  target="_blank"
+                  class="github-link"
+                  title="GitHub Repo"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
               </div>
             </div>
           </div>
 
-          <button id="toggle-skills-btn" class="btn">Show More</button>
-        </div>
-      </div>
-    </section>
-
-    <!--services section design-->
-    <section class="services" id="experiences">
-      <h2 class="heading">My <span>Experiences</span></h2>
-      <div class="services-container">
-        <div class="experience-card">
-          <div class="experience-header">
-            <h3 class="experience-title">Web Development Intern</h3>
-
-            <span class="experience-duration">2024 — PRESENT</span>
-          </div>
-          <a href="#" class="experience-place">
-            HiddenLayer Network Pvt. Ltd.
-            <span class="external-link-icon">– Kathmandu</span>
-          </a>
-          <div class="experience-description">
-            <ul class="experience-list">
-              <li>
-                Developed a fully functional and reusable portfolio website
-                using WordPress as the backend.
-              </li>
-              <li>
-                Researched, designed, and built a website for ApplyLeap using
-                Wagtail CMS as the backend.
-              </li>
-              <li>
-                Hosted the ApplyLeap website on AWS, with the frontend on S3 and
-                the backend on EC2 using a custom subdomain.
-              </li>
-              <li>
-                Implemented SSL certificates and CloudFront to secure the
-                website with HTTPS.
-              </li>
-              <li>
-                Optimized hosting costs while ensuring performance and
-                scalability.
-              </li>
-              <li>
-                Tracked, identified, and reported website bugs to the Website
-                Developer for timely resolution.
-              </li>
-              <li>
-                Assisted the Marketing Manager in executing SEO strategies to
-                enhance website visibility.
-              </li>
-              <li>
-                Helped optimize website performance through technical
-                improvements and SEO best practices.
-              </li>
-            </ul>
-          </div>
-          <div class="experience-skills">
-            <span class="skill-badge">React</span>
-            <span class="skill-badge">Tailwind</span>
-            <span class="skill-badge">Wordpress</span>
-            <span class="skill-badge">Wagtail</span>
-            <span class="skill-badge">Payload</span>
-            <span class="skill-badge">AWS</span>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-header">
-            <h3 class="experience-title">Assistant Website Manager</h3>
-
-            <span class="experience-duration">April, 2023 — November, 2023</span>
-          </div>
-          <a href="#" class="experience-place">
-            Thames International College
-            <span class="external-link-icon">–Old Baneswor, Kathmandu</span>
-          </a>
-          <div class="experience-description">
-            <ul class="experience-list">
-              <li>Tracked, identified, and reported website bugs to the Website Developer for timely resolution.</li>
-              <li>Assisted the Marketing Manager in executing Search Engine Optimization (SEO) strategies to enhance website visibility.</li>
-              <li>Helped optimize website performance through technical improvements and SEO best practices.</li>
-            </ul>
-            </ul>
-          </div>
-          <div class="experience-skills">
-            <span class="skill-badge">SEO</span>
-            <span class="skill-badge">Website Optimization</span>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Project section design-->
-    <section class="project" id="project">
-      <h2 class="heading">Latest<span> Projects</span></h2>
-      <div class="project-container">
-        <div class="project-box">
-          <div class="image-container">
-            <img src="image/project.jpg" alt="Project Image" />
-            <div class="project-layers">
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/analyzer.png" alt="Project Image" />
+              <div class="project-layers">
+                <h4>Youtube comment sentiment Analyzer</h4>
+                <div class="details">
+                  Developed a sentiment analysis tool for YouTube comments,
+                  where the frontend was built using React and the backend was
+                  powered by Python. The tool leverages the Naive Bayes
+                  algorithm to classify comments as positive, negative, or
+                  neutral.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
               <h4>Youtube comment sentiment Analyzer</h4>
-              <div class="details">
-                A NLP-powered tool that analyzes emotional tone in YouTube
-                comments. Classifies sentiments using machine learning for
-                insightful feedback.
+              <div class="skills">
+                <p class="skill">React</p>
+                <p class="skill">Python</p>
+                <p class="skill">Naive Bayes</p>
+                <p class="skill">Javascript</p>
+                <p class="skill">RESTful API</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://your-live-project.com"
+                  target="_blank"
+                  class="live-link"
+                  title="Live Project"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/Rajan123stha/comment-sentiment-analyser"
+                  class="github-link"
+                  title="GitHub Repo"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h4>Youtube comment sentiment Analyzer</h4>
-            <div class="skills">
-              <p class="skill">React</p>
-              <p class="skill">Python</p>
-              <p class="skill">Naive Bayes</p>
-              <p class="skill">Javascript</p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://your-live-project.com"
-                target="_blank"
-                class="live-link"
-                title="Live Project"
-              >
-                <i class="bx bx-link-external"></i>
-              </a>
-              <a
-                href="https://github.com/your-repo"
-                target="_blank"
-                class="github-link"
-                title="GitHub Repo"
-              >
-                <i class="bx bxl-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-box">
-          <div class="image-container">
-            <img src="image/project.jpg" alt="Project Image" />
-            <div class="project-layers">
-              <h4>Ecommerce System</h4>
-              <div class="details">
-                This project is a simple eCommerce website developed as a part
-                of my academic work. The website focuses on the frontend and
-                showcases various products with their details.
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/theme.png" alt="Project Image" />
+              <div class="project-layers">
+                <h4>WordPress Theme for Portfolio</h4>
+                <div class="details">
+                  Developed a fully functional and reusable WordPress theme for
+                  a portfolio website, allowing users to edit their details
+                  (such as name, experience, and other personal information)
+                  through the WordPress backend. The website showcased personal
+                  projects, skills, and experience.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>WordPress Theme for Portfolio</h4>
+              <div class="skills">
+                <p class="skill">WordPress</p>
+                <p class="skill">HTML</p>
+                <p class="skill">Javascript</p>
+                <p class="skill">Wordpress Theme Development</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://lemonchiffon-caribou-673567.hostingersite.com/"
+                  target="_blank"
+                  class="live-link"
+                  title="Live Project"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h4>Ecommerce System</h4>
-            <div class="skills">
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">Javascript</p>
-              <p class="skill">React</p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://rajan123stha.github.io/Ecommerce-system/"
-                target="_blank"
-                class="live-link"
-                title="Live Project"
-              >
-                <i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-box">
-          <div class="image-container">
-            <img src="image/education.jpeg" alt="Project Image" />
-            <div class="project-layers">
-              <h4>Edusanjal Clone</h4>
-              <div class="details">
-                I've crafted a replica of Edusanjal, leveraging my expertise in
-                programming and design. This platform provides comprehensive
-                educational resources and services, catering to students' needs
-                with intuitive navigation and rich content.
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/ecommerce.png" alt="Project Image" />
+              <div class="project-layers">
+                <h4>Fully Functional Ecommerce Website</h4>
+                <div class="details">
+                  Developed a creative, fully functional e-commerce website with
+                  a seamless user experience. The website includes a shopping
+                  cart, product catalog, checkout system, and payment gateway
+                  integration.Focused on crafting an engaging UI and optimized
+                  for both mobile and desktop devices.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Fully Functional Ecommerce Website</h4>
+              <div class="skills">
+                <p class="skill">React</p>
+                <p class="skill">Express</p>
+                <p class="skill">MongoDB</p>
+                <p class="skill">Payment Gateway</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Rajan123stha/Ecommerce-system-cretiveCrefted"
+                  class="github-link"
+                  title="GitHub Repo"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h4>Edusanjal Clone</h4>
-            <div class="skills">
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">Javascript</p>
-              <p class="skill">React</p>
-              <p class="skill">Figma</p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://rajan123stha.github.io/Edusanjal"
-                target="_blank"
-                class="live-link"
-                title="Live Project"
-              >
-                <i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-box">
-          <div class="image-container">
-            <img src="image/project.jpg" alt="Project Image" />
-            <div class="project-layers">
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/project.jpg" alt="Project Image" />
+              <div class="project-layers">
+                <h4>Hostel Management System</h4>
+                <div class="details">
+                  I developed the Hostel Management System as part of my
+                  academic project to assist hostel administrators in managing
+                  students and rooms within the hostel.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
               <h4>Hostel Management System</h4>
-              <div class="details">
-                I developed the Hostel Management System as part of my academic
-                project to assist hostel administrators in managing students and
-                rooms within the hostel.
+              <div class="skills">
+                <p class="skill">HTML</p>
+                <p class="skill">CSS</p>
+                <p class="skill">Javascript</p>
+                <p class="skill">PHP</p>
+                <p class="skill">SQL</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Rajan123stha/Hostel-Management-System"
+                  class="github-link"
+                  title="GitHub Repo"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h4>Hostel Management System</h4>
-            <div class="skills">
-              <p class="skill">HTML</p>
-              <p class="skill">CSS</p>
-              <p class="skill">Javascript</p>
-              <p class="skill">PHP</p>
-              <p class="skill">SQL</p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://rajan123stha.github.io/Lookbook/"
-                target="_blank"
-                class="live-link"
-                title="Live Project"
-              >
-                <i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-box">
-          <div class="image-container">
-            <img src="image/project.jpg" alt="Project Image" />
-            <div class="project-layers">
-              <h4>CreativeCrafted</h4>
-              <div class="details">
-                I have developed fully functional ecommerce system using MERN
-                stack as a part of my academic project. Mainly to sell art and
-                craft product. I have also integrated payment sytem.
+          <div class="project-box">
+            <div class="image-container">
+              <img src="image/portfolio.png" alt="Project Image" />
+              <div class="project-layers">
+                <h4>Portfolio</h4>
+                <div class="details">
+                  I have developed a portfolio website to showcase my skills,
+                  experience and projects I have done. And used github page to
+                  host my static website.
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Portfolio</h4>
+              <div class="skills">
+                <p class="skill">HTML</p>
+
+                <p class="skill">Javascript</p>
+                <p class="skill">HTML</p>
+                <p class="skill">CSS</p>
+                <p class="skill">Figma</p>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://rajan123stha.github.io/"
+                  target="_blank"
+                  class="live-link"
+                  title="Live Project"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+                <a
+                  href="https://github.com/Rajan123stha/Rajan123stha.github.io"
+                  class="github-link"
+                  title="GitHub Repo"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h4>CreativeCrafted</h4>
-            <div class="skills">
-              <p class="skill">HTML</p>
+        </div>
+      </section>
 
-              <p class="skill">Javascript</p>
-              <p class="skill">React</p>
-              <p class="skill">Express</p>
-              <p class="skill">MongoDB</p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://rajan123stha.github.io/Lookbook/"
-                target="_blank"
-                class="live-link"
-                title="Live Project"
-              >
-                <i class="bx bx-link-external"></i>
-              </a>
-            </div>
+      <!--contact section design-->
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="contactForm" action="#" method="post">
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              id="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
           </div>
+          <div class="input-box">
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              name="number"
+              id="number"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              id="subject"
+              required
+            />
+          </div>
+          <textarea
+            name="msg"
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+        <div
+          id="thankYouMessage"
+          class="thank-you-message"
+          style="display: none"
+        >
+          <p>Thank you for contacting me! I will get back to you soon.</p>
         </div>
-      </div>
-    </section>
-
-    <!--contact section design-->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-      <form id="contactForm" action="#" method="post">
-        <div class="input-box">
-          <input
-            type="text"
-            placeholder="Full Name"
-            name="name"
-            id="name"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            id="email"
-            required
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            placeholder="Mobile Number"
-            name="number"
-            id="number"
-            required
-          />
-          <input
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            id="subject"
-            required
-          />
-        </div>
-        <textarea
-          name="msg"
-          id="msg"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-      <div id="thankYouMessage" class="thank-you-message" style="display: none">
-        <p>Thank you for contacting me! I will get back to you soon.</p>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!--Footer section design-->
     <footer class="footer">
