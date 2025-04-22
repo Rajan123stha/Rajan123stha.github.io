@@ -82,6 +82,7 @@ html {
   font-weight: 600;
   cursor: default;
   margin-right: auto;
+  margin-left: 4rem;
 }
 
 .h-part {
@@ -152,7 +153,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  /* To ensure it stays behind the content */
+  opacity: 0.5; /* Adjust the value as needed */
 }
 
 .home .home-content {
